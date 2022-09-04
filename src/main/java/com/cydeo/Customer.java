@@ -25,6 +25,10 @@ public class Customer {
         this.address = address;
     }
 
+    public UUID getId() {
+        return id;
+    }
+
     public String getUserName() {
         return userName;
     }
