@@ -1,10 +1,14 @@
 package com.cydeo;
 
 public class Main {
-       //createCustomer();
-       //createCategory();
-       //createProduct();
-       //createBalance();
-       //createDiscount();
+       public static void main(String[] args) {
 
+
+              DataGenerator.createCustomer();
+              //createCategory();
+              //createProduct();
+              //createBalance();
+              //createDiscount();
+
+       }
 }
