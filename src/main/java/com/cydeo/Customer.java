@@ -19,4 +19,16 @@ public class Customer {
         this.email = email;
         this.address = address;
     }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public List<Address> getAddress() {
+        return address;
+    }
 }
