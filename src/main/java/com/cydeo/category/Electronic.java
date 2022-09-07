@@ -8,5 +8,12 @@ public abstract class Electronic extends Category{
         super(id, name);
     }
 
-    public abstract LocalDate findDeliveryDueDate();
+    @Override
+    public String generateCategoryCode() {
+        return "EL-" + getId().toString().substring(0,8);
+    }
+
+    public LocalDate findDeliveryDueDate() {
+        return null;
+    }
 }
