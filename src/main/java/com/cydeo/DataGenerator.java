@@ -1,5 +1,10 @@
 package com.cydeo;
 
+import com.cydeo.category.Category;
+import com.cydeo.category.Electronic;
+import com.cydeo.category.Furniture;
+import com.cydeo.category.SkinCare;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -25,7 +30,13 @@ public class DataGenerator {     //DataGenerator Class is created for creating s
         StaticConstants.CUSTOMER_LIST.add(customer1);
         StaticConstants.CUSTOMER_LIST.add(customer2);
 
-
-
     }
+
+    Category category1=new Electronic(UUID.randomUUID(),"Electronic");
+    Category category2=new Furniture(UUID.randomUUID(), "Furniture");
+    Category category3=new SkinCare(UUID.randomUUID(),"SkinCare");
+
+
+
+
 }
