@@ -1,4 +1,4 @@
 package com.cydeo.category;
 
-public class SkinCare {
+public class SkinCare extends Category{
 }
