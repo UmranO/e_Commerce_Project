@@ -11,4 +11,13 @@ public class Product {
     private Integer remainingStock;
     private UUID categoryId;
 
+
+    public Product(UUID id, String name, Double price, Integer stock, Integer remainingStock, UUID categoryId) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
+        this.remainingStock = remainingStock;
+        this.categoryId = categoryId;
+    }
 }
