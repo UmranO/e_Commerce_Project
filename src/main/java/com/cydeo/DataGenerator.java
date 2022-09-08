@@ -1,5 +1,8 @@
 package com.cydeo;
 
+import com.cydeo.balance.Balance;
+import com.cydeo.balance.CustomerBalance;
+import com.cydeo.balance.GiftCardBalance;
 import com.cydeo.category.Category;
 import com.cydeo.category.Electronic;
 import com.cydeo.category.Furniture;
@@ -24,8 +27,8 @@ public class DataGenerator {     //DataGenerator Class is created for creating s
         customer1AddressList.add(address1Customer1);
         customer1AddressList.add(address2Customer1);
 
-        Customer customer1 = new Customer(UUID.randomUUID(),"ozzy","ozzy@cydeo.com",customer1AddressList);
-        Customer customer2 = new Customer(UUID.randomUUID(),"mike","mike@gmail.com");
+        Customer customer1 = new Customer(UUID.randomUUID(), "ozzy", "ozzy@cydeo.com", customer1AddressList);
+        Customer customer2 = new Customer(UUID.randomUUID(), "mike", "mike@gmail.com");
 
         StaticConstants.CUSTOMER_LIST.add(customer1);
         StaticConstants.CUSTOMER_LIST.add(customer2);
@@ -38,18 +41,18 @@ public class DataGenerator {     //DataGenerator Class is created for creating s
         Category category2 = new Furniture(UUID.randomUUID(), "Furniture");
         Category category3 = new SkinCare(UUID.randomUUID(), "SkinCare");
 
-    StaticConstants.CATEGORY_LIST.add(category1);
-    StaticConstants.CATEGORY_LIST.add(category2);
-    StaticConstants.CATEGORY_LIST.add(category3);
+        StaticConstants.CATEGORY_LIST.add(category1);
+        StaticConstants.CATEGORY_LIST.add(category2);
+        StaticConstants.CATEGORY_LIST.add(category3);
     }
 
-    public static void createProducts(){
-        Product product1=
-                new Product(UUID.randomUUID(),"PS5",230.72,7,7,StaticConstants.CATEGORY_LIST.get(0).getId());
+    public static void createProducts() {
+        Product product1 =
+                new Product(UUID.randomUUID(), "PS5", 230.72, 7, 7, StaticConstants.CATEGORY_LIST.get(0).getId());
         Product product2 =
-                new Product(UUID.randomUUID(),"XBOX",120.34,15,15,StaticConstants.CATEGORY_LIST.get(0).getId());
-        Product product3=
-                new Product(UUID.randomUUID(),"Chair",30.87,85,85,StaticConstants.CATEGORY_LIST.get(1).getId());
+                new Product(UUID.randomUUID(), "XBOX", 120.34, 15, 15, StaticConstants.CATEGORY_LIST.get(0).getId());
+        Product product3 =
+                new Product(UUID.randomUUID(), "Chair", 30.87, 85, 85, StaticConstants.CATEGORY_LIST.get(1).getId());
 
 
         StaticConstants.PRODUCT_LIST.add(product1);
@@ -58,4 +61,17 @@ public class DataGenerator {     //DataGenerator Class is created for creating s
 
     }
 
+
+    public static void createBalance (){
+
+        Balance customerBalance=new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(),450.00);
+        Balance giftBalance=new GiftCardBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(),500.00);
+
+
+
+
+
+    }
+
 }
+
