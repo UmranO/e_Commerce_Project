@@ -23,4 +23,7 @@ public abstract class Balance {
 
     public abstract Double addBalance(Double additionalBalance);
 
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
 }
