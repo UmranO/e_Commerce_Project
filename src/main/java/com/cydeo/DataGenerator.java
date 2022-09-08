@@ -73,8 +73,6 @@ public class DataGenerator {     //DataGenerator Class is created for creating s
         StaticConstants.BALANCE_LIST.add(customerBalance);
         StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftBalance);
 
-
-
     }
 
 }
