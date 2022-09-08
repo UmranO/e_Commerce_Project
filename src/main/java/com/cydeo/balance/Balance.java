@@ -2,7 +2,7 @@ package com.cydeo.balance;
 
 import java.util.UUID;
 
-public class Balance {
+public abstract class Balance {
 
 
     private UUID customerId;
@@ -20,4 +20,7 @@ public class Balance {
     public Double getBalance() {
         return balance;
     }
+
+    public abstract Double addBalance(Double additionalBalance);
+
 }
