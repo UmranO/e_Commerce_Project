@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import static com.cydeo.StaticConstants.BALANCE_LIST;
+import static com.cydeo.StaticConstants.GIFT_CARD_BALANCE_LIST;
+
 public class DataGenerator {     //DataGenerator Class is created for creating sample customers. Sample customers better not created in Main Class to keep it neet
     //Plus I do have a method creating a customer for me
 
@@ -67,7 +70,8 @@ public class DataGenerator {     //DataGenerator Class is created for creating s
         Balance customerBalance=new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(),450.00);
         Balance giftBalance=new GiftCardBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(),500.00);
 
-
+        StaticConstants.BALANCE_LIST.add(customerBalance);
+        StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftBalance);
 
 
 
