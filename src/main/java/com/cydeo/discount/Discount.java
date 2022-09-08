@@ -3,7 +3,7 @@ package com.cydeo.discount;
 import java.lang.reflect.Constructor;
 import java.util.UUID;
 
-public class Discount {
+public abstract class Discount {
 
     private UUID discountId;
     private String name;
@@ -26,6 +26,9 @@ public class Discount {
     public Double getThresholdAmount() {
         return thresholdAmount;
     }
+
+    public abstract Double calculateCartAmountAfterDiscountApplied(Double amount);
+
 
 
 }
