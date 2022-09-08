@@ -1,5 +1,6 @@
 package com.cydeo;
 
+import com.cydeo.balance.Balance;
 import com.cydeo.category.Category;
 
 import java.util.ArrayList;
@@ -11,4 +12,8 @@ public class StaticConstants {
     public static final List<Category> CATEGORY_LIST = new ArrayList<>();
 
     public static final List<Product> PRODUCT_LIST = new ArrayList<>();
+
+    public static final List<Balance> BALANCE_LIST=new ArrayList<>();
+
+    public static final List<Balance> GIFT_CARD_BALANCE_LIST=new ArrayList<>();
 }
