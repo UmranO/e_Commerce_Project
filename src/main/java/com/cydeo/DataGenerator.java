@@ -83,6 +83,10 @@ public class DataGenerator {     //DataGenerator Class is created for creating s
         Discount discountAmountBased=new AmountBasedDiscount(UUID.randomUUID(),"Buy 250 Free 50",250.00,50.00);
         Discount discountRateBased=new RateBasedDiscount(UUID.randomUUID(),"Buy 500,Free15%",500.00,15.00);
 
+
+        StaticConstants.DISCOUNT_LIST.add(discountAmountBased);
+        StaticConstants.DISCOUNT_LIST.add(discountRateBased);
+
     }
 
 }
